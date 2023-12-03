@@ -55,7 +55,7 @@ ul {
 .tituloWeb {
     font-family: 'Cinzel', sans-serif;
     font-weight: 700;
-    font-size: 35px;
+    font-size: 30px;
     margin-top: 20px;
     display: block;
 }
@@ -80,26 +80,38 @@ header ul img {
 }
 
 .menu {
-    padding: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
-.menu a {
-    color: #16245d;
-}
-
-.menu li a {
-    color: #16245d;
-}
-
-header a {
+header .menu a {
  color: #1d2f7c;
  font-weight: 400;
 }
+
+.offcanvas {
+    color: #1d2f7c;
+}
+.nav-item a.nav-link.active {
+    color: #1d2f7c;
+}
+
+.offcanvas-title {
+    font-size: 25px;
+}
+
+.offcanvas-header{
+    justify-content: flex-end;
+}
+.offcanvas-body a{
+    font-size: 20px;
+}
+
 /*Main index*/
 
 #introduccion {
-    margin: 6px;
-    padding: 6px;
+    margin: 10px;
+    padding: 10px;
     text-align:left;
     display: flex;
     flex-direction: column;
@@ -142,7 +154,7 @@ header a {
     margin: 10px;
 }
 .tarjeta p {
-    min-width: 300px;
+    min-width: 280px;
 }
 
 .tarjeta img {
@@ -177,7 +189,6 @@ header a {
     grid-area: listaDirecciones;
     font-size: 15px;
     margin-top: 20px;
-    margin-left: 30px;
 }
 
 .segundoLogo {
@@ -227,7 +238,7 @@ footer form button {
     width: 60px;
     font-size: 10px;
     color: white;
-background-color: black;
+    background-color: black;
 }
 .boxRedes {
     grid-area: redesMusk;
@@ -303,6 +314,11 @@ footer a {
     .redesMusk {
         justify-content:center;
     } 
+
+ .navbar-brand {
+    color: red;
+
+}
     /*Main Index*/
     #seccionDeEmpresa{
     font-size: 30px;
@@ -365,12 +381,12 @@ footer a {
         justify-content:end;
     }
     .tarjeta {
-        max-height: 360px;
+        max-height: 410px;
         min-width: 380px;
         margin: 20px;
     }
     .tarjeta p {
-        height: 340px;
+        height: 350px;
         width: 360px;
     }
     #uno {
@@ -420,14 +436,22 @@ footer a {
         "proyecto1  proyecto2   proyecto3"
         "proyecto4  proyecto5   proyecto6"
         ".          proyecto7   .        ";
-        grid-template-columns: repeat(3, 420px);
-        grid-template-rows: repeat(3, 440px);
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
         justify-content: space-between;
         align-items: start;
     }
 
     .tarjeta {
-        min-width: 400px;
+        min-width: 100%;
+    }
+    .tarjeta p {
+        height: 350px;
+        width: 360px;
+    }
+
+    .tarjeta img {
+        margin-bottom: 60%;
     }
 
     #cierre iframe {
@@ -562,7 +586,6 @@ table tr:first-child {
         text-align:left;
     }
 }
-
 
 /*Main pagina libros*/
 
