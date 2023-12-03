@@ -4,6 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--link CDN CSS Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!--css-->
     <link rel="stylesheet" href="../css/style.css">
     <title>Biografia</title>
     <!--Link a Goggle Fonts-->
@@ -41,227 +45,288 @@
             </ul>
         </section>
         <!-- Nav: barra de navegación de secciones -->
-        <nav class="menu">
-            <ul>
-                <li> <a href="../index.html"> Inicio </a> </li>
-                <li> <a href="biografia.html"> Biografia </a> </li>
-                <li> <a href="libros.html"> Libros </a> </li>
-                <li> <a href="noticias.html"> Noticias </a> </li>
-                <li> <a href="contacto.html"> Contacto </a> </li>
-            </ul>
+        <nav class="menu navbar navbar-expand-sm bg-body-tertiary">
+            <a class="navbar-brand" href="biografia.html">Biografia</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarOffcanvasLg"
+                aria-controls="navbarOffcanvasLg" aria-label="Toggle navigation" data-bs-target="#offcanvasNavbar"
+                aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="navbarOffcanvasLg"
+                aria-labelledby="navbarOffcanvasLgLabel" aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Opciones</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="../index.html"> Inicio </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="libros.html"> Libros </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="noticias.html"> Noticias </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="contacto.html"> Contacto </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
     </header>
     <main>
-        <div id="cuerpoBiografia"> 
-        <section id="indice">
-            <!--Enlaces internos-->
-            <ul>
-                <li> <a href="#quien">¿Quien es?</a></li>
-                <li><a href="#desarrollo">Infancia, juventud y formación</a></li>
-                <li><a href="#metodo">Método de trabajo</a></li>
-                <li><a href="#cargos">Rol en proyectos</a></li>
-            </ul>
-        </section>
-        <div>
-            <img src="../img/elon-tesla3.jpg" alt="Imagen de portada">
-        </div>
-        <section>
-            <a id="wikipedia" href="https://es.wikipedia.org/wiki/Elon_Musk" target="_blank">Contenido tomado de
-                Wikipedia:</a>
-            <article id="quien">
-                <h2>¿Quien es?</h2>
-                <p class="Parrafos">
-                    Elon Reeve Musk (Pretoria, 28 de junio de 1971), conocido como Elon Musk, es un empresario, inversor
-                    y magnate sudafricano que también posee las nacionalidades canadiense y estadounidense. Es el
-                    fundador, consejero delegado e ingeniero jefe de SpaceX; inversor ángel, director general y
-                    arquitecto de productos de Tesla, Inc.; fundador de The Boring Company; cofundador de Neuralink y
-                    OpenAI, aunque ya no tiene más participación en esta última por desacuerdos en el rumbo de la
-                    empresa, además de ser el director de tecnología de X Corp..5​ Con un patrimonio neto estimado en
-                    unos 207 mil millones de dólares en junio de 2023,6​ Musk es la persona más rica del mundo según el
-                    índice de multimillonarios de Bloomberg y la lista de multimillonarios en tiempo real de
-                    Forbes.
-                </p>
-                <p class="Parrafos">
-                    Musk nació de madre canadiense y padre sudafricano blanco, y se crio en Pretoria (Sudáfrica).
-                    Estudió brevemente en la Universidad de Pretoria antes de trasladarse a Canadá a los 17 años. Se
-                    matriculó en la Universidad de Queen y se trasladó a la Universidad de Pensilvania dos años después,
-                    donde se graduó en Economía y Física. En 1995 se trasladó a California para asistir a la Universidad
-                    Stanford, pero en su lugar decidió seguir una carrera empresarial, cofundando la empresa de software
-                    web Zip2 con su hermano Kimbal. La empresa fue adquirida por Compaq por 307 millones de dólares en
-                    1999. Ese mismo año, Musk cofundó el banco online X.com, que se fusionó con Confinity en 2000 para
-                    formar PayPal. La empresa fue comprada por eBay en 2002 por 1500 millones de dólares.
-                </p>
-                <p class="Parrafos">
-                    En 2002, Musk fundó SpaceX, fabricante aeroespacial y empresa de servicios de transporte espacial,
-                    de la que es CEO e ingeniero jefe. En 2003, se unió al fabricante de vehículos eléctricos Tesla
-                    Motors, Inc. (ahora Tesla, Inc.) como presidente y arquitecto de productos, convirtiéndose en su
-                    consejero delegado en 2008. En 2006, ayudó a crear SolarCity, una empresa de servicios de energía
-                    solar que posteriormente fue adquirida por Tesla y se convirtió en Tesla Energy. En 2015, cofundó
-                    OpenAI, una empresa de investigación sin ánimo de lucro que promueve la inteligencia artificial
-                    amigable. En 2016, cofundó Neuralink, una empresa de neurotecnología centrada en el desarrollo de
-                    interfaces cerebro-ordenador, y fundó The Boring Company, una empresa de construcción de túneles.
-                    También acordó la compra de la importante red social estadounidense Twitter en 2022 por 44 000
-                    millones de dólares. Musk también ha propuesto el hyperloop. En noviembre de 2021, el director
-                    general de Tesla fue la primera persona de la historia en acumular una fortuna de 300 000 millones
-                    de dólares.
-                </p>
-                <p class="Parrafos">
-                    Ha sido criticado por hacer declaraciones poco científicas y controvertidas. En 2018, fue demandado
-                    por la Comisión de Bolsa y Valores de Estados Unidos (SEC) por tuitear falsamente que había
-                    conseguido financiación para una adquisición privada de Tesla. Llegó a un acuerdo con la SEC pero no
-                    admitió su culpabilidad, renunciando temporalmente a su presidencia y aceptando limitaciones en su
-                    uso de Twitter. En 2019, ganó un juicio por difamación presentado contra él por un espeleólogo
-                    británico que asesoró en el rescate de la cueva de Tham Luang. Musk también ha sido criticado por
-                    difundir información errónea sobre la pandemia de COVID-19 y por sus otras opiniones sobre asuntos
-                    como la inteligencia artificial, las criptomonedas y el transporte público.
-                </p>
-                <div>
-                    <img src="../img/elon-imagen1.png" alt="Imagen elon-imagen1">
-                </div>
-            </article>
-            <article id="desarrollo">
-                <h2>Infancia, juventud y formación</h2>
-                <p class="parrafos">
-                    Sus padres, Errol Musk y Maye Haldeman,​ se conocieron en la escuela secundaria. Él era un
-                    ingeniero y promotor inmobiliario sudafricano que en su día fue copropietario de una mina de
-                    esmeraldas en la República de Zambia, cerca del lago Tanganica​ y concejal de Pretoria
-                    que se opuso a las políticas del apartheid y al Partido Nacional en Sudáfrica. Su madre es
-                    nutricionista y modelo; oriunda de Canadá, se mudó a Pretoria en 1950. Se casaron en 1970 y en
-                    tres años tuvieron tres hijos: Elon (28 de junio de 1971), Kimbal (20 de septiembre de 1972) y Tosca
-                    Musk (20 de julio de 1974).​ La familia era muy rica en la juventud de Elon; su padre dijo una
-                    vez: "Teníamos tanto dinero que a veces ni siquiera podíamos cerrar nuestra caja fuerte".
+        <div id="cuerpoBiografia">
+            <section id="indice">
+                <!--Enlaces internos-->
+                <ul>
+                    <li> <a href="#quien">¿Quien es?</a></li>
+                    <li><a href="#desarrollo">Infancia, juventud y formación</a></li>
+                    <li><a href="#metodo">Método de trabajo</a></li>
+                    <li><a href="#cargos">Rol en proyectos</a></li>
+                </ul>
+            </section>
+            <div>
+                <img src="../img/elon-tesla3.jpg" alt="Imagen de portada">
+            </div>
+            <section>
+                <a id="wikipedia" href="https://es.wikipedia.org/wiki/Elon_Musk" target="_blank">Contenido tomado de
+                    Wikipedia:</a>
+                <article id="quien">
+                    <h2>¿Quien es?</h2>
+                    <p class="Parrafos">
+                        Elon Reeve Musk (Pretoria, 28 de junio de 1971), conocido como Elon Musk, es un empresario,
+                        inversor
+                        y magnate sudafricano que también posee las nacionalidades canadiense y estadounidense. Es el
+                        fundador, consejero delegado e ingeniero jefe de SpaceX; inversor ángel, director general y
+                        arquitecto de productos de Tesla, Inc.; fundador de The Boring Company; cofundador de Neuralink
+                        y
+                        OpenAI, aunque ya no tiene más participación en esta última por desacuerdos en el rumbo de la
+                        empresa, además de ser el director de tecnología de X Corp..5​ Con un patrimonio neto estimado
+                        en
+                        unos 207 mil millones de dólares en junio de 2023,6​ Musk es la persona más rica del mundo según
+                        el
+                        índice de multimillonarios de Bloomberg y la lista de multimillonarios en tiempo real de
+                        Forbes.
+                    </p>
+                    <p class="Parrafos">
+                        Musk nació de madre canadiense y padre sudafricano blanco, y se crio en Pretoria (Sudáfrica).
+                        Estudió brevemente en la Universidad de Pretoria antes de trasladarse a Canadá a los 17 años. Se
+                        matriculó en la Universidad de Queen y se trasladó a la Universidad de Pensilvania dos años
+                        después,
+                        donde se graduó en Economía y Física. En 1995 se trasladó a California para asistir a la
+                        Universidad
+                        Stanford, pero en su lugar decidió seguir una carrera empresarial, cofundando la empresa de
+                        software
+                        web Zip2 con su hermano Kimbal. La empresa fue adquirida por Compaq por 307 millones de dólares
+                        en
+                        1999. Ese mismo año, Musk cofundó el banco online X.com, que se fusionó con Confinity en 2000
+                        para
+                        formar PayPal. La empresa fue comprada por eBay en 2002 por 1500 millones de dólares.
+                    </p>
+                    <p class="Parrafos">
+                        En 2002, Musk fundó SpaceX, fabricante aeroespacial y empresa de servicios de transporte
+                        espacial,
+                        de la que es CEO e ingeniero jefe. En 2003, se unió al fabricante de vehículos eléctricos Tesla
+                        Motors, Inc. (ahora Tesla, Inc.) como presidente y arquitecto de productos, convirtiéndose en su
+                        consejero delegado en 2008. En 2006, ayudó a crear SolarCity, una empresa de servicios de
+                        energía
+                        solar que posteriormente fue adquirida por Tesla y se convirtió en Tesla Energy. En 2015,
+                        cofundó
+                        OpenAI, una empresa de investigación sin ánimo de lucro que promueve la inteligencia artificial
+                        amigable. En 2016, cofundó Neuralink, una empresa de neurotecnología centrada en el desarrollo
+                        de
+                        interfaces cerebro-ordenador, y fundó The Boring Company, una empresa de construcción de
+                        túneles.
+                        También acordó la compra de la importante red social estadounidense Twitter en 2022 por 44 000
+                        millones de dólares. Musk también ha propuesto el hyperloop. En noviembre de 2021, el director
+                        general de Tesla fue la primera persona de la historia en acumular una fortuna de 300 000
+                        millones
+                        de dólares.
+                    </p>
+                    <p class="Parrafos">
+                        Ha sido criticado por hacer declaraciones poco científicas y controvertidas. En 2018, fue
+                        demandado
+                        por la Comisión de Bolsa y Valores de Estados Unidos (SEC) por tuitear falsamente que había
+                        conseguido financiación para una adquisición privada de Tesla. Llegó a un acuerdo con la SEC
+                        pero no
+                        admitió su culpabilidad, renunciando temporalmente a su presidencia y aceptando limitaciones en
+                        su
+                        uso de Twitter. En 2019, ganó un juicio por difamación presentado contra él por un espeleólogo
+                        británico que asesoró en el rescate de la cueva de Tham Luang. Musk también ha sido criticado
+                        por
+                        difundir información errónea sobre la pandemia de COVID-19 y por sus otras opiniones sobre
+                        asuntos
+                        como la inteligencia artificial, las criptomonedas y el transporte público.
+                    </p>
+                    <div>
+                        <img src="../img/elon-imagen1.png" alt="Imagen elon-imagen1">
+                    </div>
+                </article>
+                <article id="desarrollo">
+                    <h2>Infancia, juventud y formación</h2>
+                    <p class="parrafos">
+                        Sus padres, Errol Musk y Maye Haldeman,​ se conocieron en la escuela secundaria. Él era un
+                        ingeniero y promotor inmobiliario sudafricano que en su día fue copropietario de una mina de
+                        esmeraldas en la República de Zambia, cerca del lago Tanganica​ y concejal de Pretoria
+                        que se opuso a las políticas del apartheid y al Partido Nacional en Sudáfrica. Su madre es
+                        nutricionista y modelo; oriunda de Canadá, se mudó a Pretoria en 1950. Se casaron en 1970 y en
+                        tres años tuvieron tres hijos: Elon (28 de junio de 1971), Kimbal (20 de septiembre de 1972) y
+                        Tosca
+                        Musk (20 de julio de 1974).​ La familia era muy rica en la juventud de Elon; su padre dijo una
+                        vez: "Teníamos tanto dinero que a veces ni siquiera podíamos cerrar nuestra caja fuerte".
 
-                    Elon Musk creció en una casa grande con sus hermanos y varios primos. Su madre trabajó en casa como
-                    asesora nutricionista. En los fines de semana también trabajaba como modelo, por lo que sus hijos
-                    apenas veían a sus padres y tenían mucha libertad para perseguir sus intereses.
-                </p>
-                <p class="parrafos">
-                    A los nueve años comenzó a programar un Commodore VIC-20 que tenía 8 kilobytes de memoria RAM.​ A
-                    los diez años aprendió a programar.​ A los doce años diseñó su primer programa, un videojuego del
-                    espacio llamado Blastar, y se lo vendió por el equivalente a 500 USD a la revista sudafricana PC and
-                    Office Technology. En 1984 publicaron las 167 líneas de código fuente y reseñaron «En este juego
-                    tienes que destruir un carguero extraterrestre que lleva bombas mortales de hidrógeno y Status Beam
-                    Machines. El programa hace un buen uso de los sprites y las animaciones, y en este sentido su
-                    lectura merece la pena»
-                <p>
-                <p class="parrafos">
-                    El dinero que ganaba programando lo gastaba en cómics, ordenadores y juegos de rol como Dungeons &
-                    Dragons.
-                </p>
-                <p class="parrafos">
-                    En 1979, para escapar de los maltratos de su marido, que solía golpearla, su madre Maye se divorció
-                    y se mudó a Durban. Errol reclamó en los tribunales los términos del divorcio.​ En 1981 Elon
-                    decidió ir a vivir a Johannesburgo con su padre. Kimbal se unió a ellos cuatro años
-                    después.
+                        Elon Musk creció en una casa grande con sus hermanos y varios primos. Su madre trabajó en casa
+                        como
+                        asesora nutricionista. En los fines de semana también trabajaba como modelo, por lo que sus
+                        hijos
+                        apenas veían a sus padres y tenían mucha libertad para perseguir sus intereses.
+                    </p>
+                    <p class="parrafos">
+                        A los nueve años comenzó a programar un Commodore VIC-20 que tenía 8 kilobytes de memoria RAM.​
+                        A
+                        los diez años aprendió a programar.​ A los doce años diseñó su primer programa, un videojuego
+                        del
+                        espacio llamado Blastar, y se lo vendió por el equivalente a 500 USD a la revista sudafricana PC
+                        and
+                        Office Technology. En 1984 publicaron las 167 líneas de código fuente y reseñaron «En este juego
+                        tienes que destruir un carguero extraterrestre que lleva bombas mortales de hidrógeno y Status
+                        Beam
+                        Machines. El programa hace un buen uso de los sprites y las animaciones, y en este sentido su
+                        lectura merece la pena»
+                    <p>
+                    <p class="parrafos">
+                        El dinero que ganaba programando lo gastaba en cómics, ordenadores y juegos de rol como Dungeons
+                        &
+                        Dragons.
+                    </p>
+                    <p class="parrafos">
+                        En 1979, para escapar de los maltratos de su marido, que solía golpearla, su madre Maye se
+                        divorció
+                        y se mudó a Durban. Errol reclamó en los tribunales los términos del divorcio.​ En 1981 Elon
+                        decidió ir a vivir a Johannesburgo con su padre. Kimbal se unió a ellos cuatro años
+                        después.
 
-                    En la escuela no tenía amigos y era maltratado por sus compañeros. Tras tomar clases de karate,
-                    judo, lucha y a los dieciséis años crecer hasta los 180 cm empezó a defenderse.​ Consciente de que
-                    sería más fácil emigrar a Estados Unidos desde Canadá,​ solicitó un pasaporte canadiense a través
-                    de su madre, nacida en Regina, Saskatchewan, de padres estadounidenses. Mientras esperaba la
-                    documentación, asistió a la Universidad de Pretoria durante cinco meses; esto le permitió evitar el
-                    servicio militar obligatorio en Sudáfrica.
-                </p>
-                <p class="parrafos">
-                    Como muchos de sus parientes vivían en el Oeste canadiense, en 1989 Elon, Kimbal y Tosca Musk, junto
-                    a Maye Haldeman, se mudaron a Kingston, Ontario.​ Cuando llegó, todos los ahorros de Maye
-                    estaban bloqueados, por lo que tuvo que trabajar en varios empleos. Alquiló un
-                    pequeño apartamento en Toronto donde estuvieron tres semanas retirando grapas del suelo y papel
-                    pintado de las paredes. En el proceso, Maye se cortó una mano y puso en riesgo sus trabajos como
-                    modelo. Con el primer dinero que ganó, Maye compró una alfombra gruesa para que pudieran dormir en
-                    el suelo del apartamento, y un ordenador para Elon. Luego trabajó como investigadora en la
-                    Universidad de Toronto y, simultáneamente, impartía clases de nutrición y modelaje dos noches por
-                    semana y además trabajaba como asesora nutricionista y estudiaba para su segundo máster dietético.
-                    Sus tres hijos tuvieron que conseguir becas, pedir préstamos y trabajar para estudiar en la
-                    universidad. Muchas veces no podían comer carne roja ni una vez a la semana.
-                </p>
-                <p class="parrafos">
-                    En 1992 Elon obtuvo una beca para estudiar Economía y Física en la Universidad de Pensilvania.
-                    Recibió sus títulos de economía y física del Wharton School en la Universidad de Pensilvania.
-                    Después se matriculó en Stanford para hacer el doctorado, pero a los dos días lo abandonó para
-                    iniciar su propia empresa.​ En 1995 tuvo la intención de trabajar para Netscape y fue a sus
-                    oficinas, pero no se atrevió a hablar con nadie por timidez.
-                </p>
-                <p class="parrafos">
-                    Uno de sus profesores en la Universidad de Pensilvania era director ejecutivo de una empresa en Los
-                    Gatos, Silicon Valley, dedicada a investigar ultracondensadores electrolíticos destinados a
-                    vehículos eléctricos. Elon trabajó un verano en la empresa Pinnacle Research. Esos
-                    ultracondensadores tenían una densidad energética muy alta, pero sus componentes químicos eran
-                    carísimos y se vendían por miligramos porque había muy pocas minas que los extrajeran y no eran
-                    escalables para su producción en masa.
-                </p>
-                <p class="parrafos">
-                    Tras obtener sus licenciaturas, e inspirado por innovadores como Nikola Tesla,​ decidió entrar en
-                    tres áreas en las que consideraba había «problemas importantes», como luego indicaría él mismo: «Una
-                    de ellas era internet, otra la energía renovable y la otra era el espacio».
-                </p>
-            </article>
-            <article id="metodo">
-                <h2>Método de trabajo</h2>
-                <p>
-                    Usa su versión del método científico:
-                </p>
-                <ol>
-                    <li> pregunta una cuestión.</li>
-                    <li>Reúne todas las posibles evidencias sobre el asunto.</li>
-                    <li>Desarrolla axiomas basados en la evidencia e intenta asignar una probabilidad de verdad
-                        a cada
-                        una.</li>
-                    <li>Llega a una conclusión basada en la evidencia para determinar: ¿Son correctos estos
-                        axiomas?
-                        ¿Son relevantes? ¿Necesariamente llevan a esta conclusión? ¿Con qué probabilidad?
-                    </li>
-                    <li>Intenta falsear la conclusión. Busca refutaciones de otros que te ayuden a romper tu
-                        conclusión.
-                    </li>
-                    <li>Si nadie puede invalidar tu conclusión, entonces probablemente tengas razón, pero no la
-                        razón
-                        absoluta.</li>
-                </ol>
-            </article>
-            <article id="cargos">
-                <h3>Rol en proyectos</h3>
-                <table>
-                    <!--Table row-->
-                    <tr>
-                        <!--Table data-->
-                        <td>Compañia</td>
-                        <td>Cargo</td>
-                        <td>Fechas en rol</td>
-                        <td>Logo</td>
-                    </tr>
-                    <tr>
-                        <td>X Corp</td>
-                        <td>Director ejecutivo</td>
-                        <td>25/10/2022 - 12/06/2023</td>
-                        <td><img src="../img/logo-x.jpg" alt="Logo de x"></td>
-                    </tr>
-                    <tr>
-                        <td>Space X</td>
-                        <td>Director general</td>
-                        <td>17/12/2016 - En el cargo</td>
-                        <td><img src="../img/spacex-logo.png"></td>
-                    </tr>
-                    <tr>
-                        <td>Tesla, Inc.</td>
-                        <td>Director general</td>
-                        <td>07/07/2016 - En el cargo</td>
-                        <td><img src="../img/tesla-logo.jpg"></td>
-                    </tr>
-                    <tr>
-                        <td>The Boring Company</td>
-                        <td>Director general</td>
-                        <td>04/07/2006</td>
-                        <td><img src="../img/boaring-logo.png"></td>
-                    </tr>
-                    <tr>
-                        <td>Neuralink</td>
-                        <td>Copresidente</td>
-                        <td>01/07/2003</td>
-                        <td><img src="../img/neuralink-logo.png"></td>
-                    </tr>
-                </table>
-            </article>
-        </section>
+                        En la escuela no tenía amigos y era maltratado por sus compañeros. Tras tomar clases de karate,
+                        judo, lucha y a los dieciséis años crecer hasta los 180 cm empezó a defenderse.​ Consciente de
+                        que
+                        sería más fácil emigrar a Estados Unidos desde Canadá,​ solicitó un pasaporte canadiense a
+                        través
+                        de su madre, nacida en Regina, Saskatchewan, de padres estadounidenses. Mientras esperaba la
+                        documentación, asistió a la Universidad de Pretoria durante cinco meses; esto le permitió evitar
+                        el
+                        servicio militar obligatorio en Sudáfrica.
+                    </p>
+                    <p class="parrafos">
+                        Como muchos de sus parientes vivían en el Oeste canadiense, en 1989 Elon, Kimbal y Tosca Musk,
+                        junto
+                        a Maye Haldeman, se mudaron a Kingston, Ontario.​ Cuando llegó, todos los ahorros de Maye
+                        estaban bloqueados, por lo que tuvo que trabajar en varios empleos. Alquiló un
+                        pequeño apartamento en Toronto donde estuvieron tres semanas retirando grapas del suelo y papel
+                        pintado de las paredes. En el proceso, Maye se cortó una mano y puso en riesgo sus trabajos como
+                        modelo. Con el primer dinero que ganó, Maye compró una alfombra gruesa para que pudieran dormir
+                        en
+                        el suelo del apartamento, y un ordenador para Elon. Luego trabajó como investigadora en la
+                        Universidad de Toronto y, simultáneamente, impartía clases de nutrición y modelaje dos noches
+                        por
+                        semana y además trabajaba como asesora nutricionista y estudiaba para su segundo máster
+                        dietético.
+                        Sus tres hijos tuvieron que conseguir becas, pedir préstamos y trabajar para estudiar en la
+                        universidad. Muchas veces no podían comer carne roja ni una vez a la semana.
+                    </p>
+                    <p class="parrafos">
+                        En 1992 Elon obtuvo una beca para estudiar Economía y Física en la Universidad de Pensilvania.
+                        Recibió sus títulos de economía y física del Wharton School en la Universidad de Pensilvania.
+                        Después se matriculó en Stanford para hacer el doctorado, pero a los dos días lo abandonó para
+                        iniciar su propia empresa.​ En 1995 tuvo la intención de trabajar para Netscape y fue a sus
+                        oficinas, pero no se atrevió a hablar con nadie por timidez.
+                    </p>
+                    <p class="parrafos">
+                        Uno de sus profesores en la Universidad de Pensilvania era director ejecutivo de una empresa en
+                        Los
+                        Gatos, Silicon Valley, dedicada a investigar ultracondensadores electrolíticos destinados a
+                        vehículos eléctricos. Elon trabajó un verano en la empresa Pinnacle Research. Esos
+                        ultracondensadores tenían una densidad energética muy alta, pero sus componentes químicos eran
+                        carísimos y se vendían por miligramos porque había muy pocas minas que los extrajeran y no eran
+                        escalables para su producción en masa.
+                    </p>
+                    <p class="parrafos">
+                        Tras obtener sus licenciaturas, e inspirado por innovadores como Nikola Tesla,​ decidió entrar
+                        en
+                        tres áreas en las que consideraba había «problemas importantes», como luego indicaría él mismo:
+                        «Una
+                        de ellas era internet, otra la energía renovable y la otra era el espacio».
+                    </p>
+                </article>
+                <article id="metodo">
+                    <h2>Método de trabajo</h2>
+                    <p>
+                        Usa su versión del método científico:
+                    </p>
+                    <ol>
+                        <li> pregunta una cuestión.</li>
+                        <li>Reúne todas las posibles evidencias sobre el asunto.</li>
+                        <li>Desarrolla axiomas basados en la evidencia e intenta asignar una probabilidad de verdad
+                            a cada
+                            una.</li>
+                        <li>Llega a una conclusión basada en la evidencia para determinar: ¿Son correctos estos
+                            axiomas?
+                            ¿Son relevantes? ¿Necesariamente llevan a esta conclusión? ¿Con qué probabilidad?
+                        </li>
+                        <li>Intenta falsear la conclusión. Busca refutaciones de otros que te ayuden a romper tu
+                            conclusión.
+                        </li>
+                        <li>Si nadie puede invalidar tu conclusión, entonces probablemente tengas razón, pero no la
+                            razón
+                            absoluta.</li>
+                    </ol>
+                </article>
+                <article id="cargos">
+                    <h3>Rol en proyectos</h3>
+                    <table>
+                        <!--Table row-->
+                        <tr>
+                            <!--Table data-->
+                            <td>Compañia</td>
+                            <td>Cargo</td>
+                            <td>Fechas en rol</td>
+                            <td>Logo</td>
+                        </tr>
+                        <tr>
+                            <td>X Corp</td>
+                            <td>Director ejecutivo</td>
+                            <td>25/10/2022 - 12/06/2023</td>
+                            <td><img src="../img/logo-x.jpg" alt="Logo de x"></td>
+                        </tr>
+                        <tr>
+                            <td>Space X</td>
+                            <td>Director general</td>
+                            <td>17/12/2016 - En el cargo</td>
+                            <td><img src="../img/spacex-logo.png"></td>
+                        </tr>
+                        <tr>
+                            <td>Tesla, Inc.</td>
+                            <td>Director general</td>
+                            <td>07/07/2016 - En el cargo</td>
+                            <td><img src="../img/tesla-logo.jpg"></td>
+                        </tr>
+                        <tr>
+                            <td>The Boring Company</td>
+                            <td>Director general</td>
+                            <td>04/07/2006</td>
+                            <td><img src="../img/boaring-logo.png"></td>
+                        </tr>
+                        <tr>
+                            <td>Neuralink</td>
+                            <td>Copresidente</td>
+                            <td>01/07/2003</td>
+                            <td><img src="../img/neuralink-logo.png"></td>
+                        </tr>
+                    </table>
+                </article>
+            </section>
         </div>
     </main>
     <!-- Footer: pie de página -->
@@ -310,7 +375,10 @@
             </section>
         </div>
     </footer>
-
+    <!--link CDN JS Bootstrap-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>

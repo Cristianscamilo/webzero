@@ -79,12 +79,16 @@ header ul img {
     border-radius: 50%;
 }
 
+.menu {
+    padding: 10px;
+}
 
-.menu ul {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 10px;
+.menu a {
+    color: #16245d;
+}
+
+.menu li a {
+    color: #16245d;
 }
 
 header a {
@@ -215,15 +219,16 @@ header a {
 
 footer form input {
     font-size: 10px;
-    width: 90px;
+    width: 95px;
     display: inline;
 }
 
 footer form button {
-    width: 55px;
+    width: 60px;
     font-size: 10px;
+    color: white;
+background-color: black;
 }
-
 .boxRedes {
     grid-area: redesMusk;
     display: flex;
@@ -297,15 +302,7 @@ footer a {
     }
     .redesMusk {
         justify-content:center;
-    }
-    .menu li{
-        padding-right: 10px;
-    }
-
-    .menu ul{
-        flex-direction: row;
-        justify-content: center;
-    }   
+    } 
     /*Main Index*/
     #seccionDeEmpresa{
     font-size: 30px;
@@ -366,9 +363,6 @@ footer a {
 @media screen and (min-width: 768px) {
     .redesMusk {
         justify-content:end;
-    }
-    .menu ul{
-        justify-content: end;
     }
     .tarjeta {
         max-height: 360px;
@@ -460,8 +454,6 @@ footer a {
     footer form button {
         width: 130px;
         font-size: 20px;
-        color: white;
-        background-color: black;
     }
     .redesFooter li img{
         width: 50px;
@@ -487,9 +479,6 @@ footer a {
 }
 /*Main pagina biografia*/
 .redesMusk{
-    padding-right: 10px;
-} 
-.menu {
     padding-right: 10px;
 }
 #indice {
