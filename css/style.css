@@ -55,7 +55,7 @@ ul {
 .tituloWeb {
     font-family: 'Cinzel', sans-serif;
     font-weight: 700;
-    font-size: 35px;
+    font-size: 30px;
     margin-top: 20px;
     display: block;
 }
@@ -79,23 +79,39 @@ header ul img {
     border-radius: 50%;
 }
 
-
-.menu ul {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 10px;
+.menu {
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
-header a {
+header .menu a {
  color: #1d2f7c;
  font-weight: 400;
 }
+
+.offcanvas {
+    color: #1d2f7c;
+}
+.nav-item a.nav-link.active {
+    color: #1d2f7c;
+}
+
+.offcanvas-title {
+    font-size: 25px;
+}
+
+.offcanvas-header{
+    justify-content: flex-end;
+}
+.offcanvas-body a{
+    font-size: 20px;
+}
+
 /*Main index*/
 
 #introduccion {
-    margin: 6px;
-    padding: 6px;
+    margin: 10px;
+    padding: 10px;
     text-align:left;
     display: flex;
     flex-direction: column;
@@ -138,7 +154,7 @@ header a {
     margin: 10px;
 }
 .tarjeta p {
-    min-width: 300px;
+    min-width: 280px;
 }
 
 .tarjeta img {
@@ -173,7 +189,6 @@ header a {
     grid-area: listaDirecciones;
     font-size: 15px;
     margin-top: 20px;
-    margin-left: 30px;
 }
 
 .segundoLogo {
@@ -215,15 +230,16 @@ header a {
 
 footer form input {
     font-size: 10px;
-    width: 90px;
+    width: 95px;
     display: inline;
 }
 
 footer form button {
-    width: 55px;
+    width: 60px;
     font-size: 10px;
+    color: white;
+    background-color: black;
 }
-
 .boxRedes {
     grid-area: redesMusk;
     display: flex;
@@ -297,15 +313,12 @@ footer a {
     }
     .redesMusk {
         justify-content:center;
-    }
-    .menu li{
-        padding-right: 10px;
-    }
+    } 
 
-    .menu ul{
-        flex-direction: row;
-        justify-content: center;
-    }   
+ .navbar-brand {
+    color: red;
+
+}
     /*Main Index*/
     #seccionDeEmpresa{
     font-size: 30px;
@@ -367,16 +380,13 @@ footer a {
     .redesMusk {
         justify-content:end;
     }
-    .menu ul{
-        justify-content: end;
-    }
     .tarjeta {
-        max-height: 360px;
+        max-height: 410px;
         min-width: 380px;
         margin: 20px;
     }
     .tarjeta p {
-        height: 340px;
+        height: 350px;
         width: 360px;
     }
     #uno {
@@ -426,14 +436,22 @@ footer a {
         "proyecto1  proyecto2   proyecto3"
         "proyecto4  proyecto5   proyecto6"
         ".          proyecto7   .        ";
-        grid-template-columns: repeat(3, 420px);
-        grid-template-rows: repeat(3, 440px);
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
         justify-content: space-between;
         align-items: start;
     }
 
     .tarjeta {
-        min-width: 400px;
+        min-width: 100%;
+    }
+    .tarjeta p {
+        height: 350px;
+        width: 360px;
+    }
+
+    .tarjeta img {
+        margin-bottom: 60%;
     }
 
     #cierre iframe {
@@ -460,8 +478,6 @@ footer a {
     footer form button {
         width: 130px;
         font-size: 20px;
-        color: white;
-        background-color: black;
     }
     .redesFooter li img{
         width: 50px;
@@ -488,17 +504,10 @@ footer a {
 /*Main pagina biografia*/
 .redesMusk{
     padding-right: 10px;
-} 
-.menu {
-    padding-right: 10px;
-}
-#indice {
-    padding: 5px;
-    margin: 20px;
 }
 
-#indice li a{
-    color: #0e183e;
+#indice ul li a {
+    color: white;
     font-size: 15px;
 }
 #cuerpoBiografia {
@@ -506,9 +515,13 @@ footer a {
     flex-direction: column;
     padding: 10px;
     align-items: center;
+    background-image: url(../img/fondoB.jpg);
+    background-size: 100% 100%;
+    color: white;
 }
 #cuerpoBiografia img {
     width: 100%;
+    max-width: 600px;
     padding: 10px;
     justify-content: center;
 }
@@ -519,6 +532,8 @@ footer a {
     font-size: 8px;
     display: block;
     text-align: center;
+    color: white;
+    margin-bottom: 10px;
 
 }
 #cuerpoBiografia h2 {
@@ -526,14 +541,13 @@ footer a {
     font-size: 160%;
     text-align: center;
 }
-#metodo {
-    display: flex;
-    flex-direction: column;
-    margin: 10px;
-    padding: 10px;
+div .accordion-body {
+    background-color: #070c1f;
+    color: white;
 }
-#metodo li {
-    margin-top: 10px;
+#generalidadesElon ol {
+    padding: 10PX;
+    margin-left: 10px;
 }
 #cargos {
     display: flex;
@@ -548,7 +562,8 @@ footer a {
     padding: 10px;
 }
 #cargos img {
-    width: 50px;
+    min-width: 80px;
+    max-width: 140px;
 }
 #cargos table {
     border-collapse: collapse;
@@ -562,19 +577,54 @@ table tr:first-child {
     text-align: center;
     border: 1px solid grey;
 }
-
-@media screen and (min-width: 600px) {
+/* Pantalla 768px en adelante*/
+@media screen and (min-width: 768px) {
     #cuerpoBiografia {
-        align-items:flex-start;
-    }  
-    #cuerpoBiografia h2 {
-        width: 100%;
-        font-size: 160%;
-        text-align:left;
+        align-items: center;
+    }
+    #acordionHistoria {
+        width: 75vw;
+        max-width: 574px;
     }
 }
-
-
+/* Pantalla 1024px en adelante*/
+@media screen and (min-width: 1024px) {
+    #cuerpoBiografia {
+        background-size: 100% 100%;
+    }
+    #cuerpoBiografia{
+        display: grid;
+        grid-template-areas: 
+        "indexBiografia       .              "
+        "imgTeslaElon         historiaElon   "
+        "metodoProyectos      imgCoheteElon";
+        grid-template-columns: 50vw 50vw;
+        grid-template-rows: 160px 30rem 1fr ;
+        align-items: start;
+        justify-items: start;
+    }
+    #indice{
+        grid-area: indexBiografia;
+    }
+    #imgTeslaElon {
+        grid-area: imgTeslaElon;
+    }
+    #acordionHistoria {
+        grid-area: historiaElon;
+        max-width: 45vw;
+        max-height: 76%;
+        padding-top: 10px;
+        padding-left: 10px;
+        overflow: scroll;
+    }
+    #imgSpaceElon {
+        grid-area: imgCoheteElon;
+        width: 48vw;
+    }
+    #generalidadesElon{
+        grid-area: metodoProyectos;
+    }
+}
 /*Main pagina libros*/
 
 
