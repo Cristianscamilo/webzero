@@ -179,7 +179,7 @@ header .menu a {
 /*Footer*/
 
 .pieDePagina {
-    background-color: #16245d;
+    background-image: linear-gradient(to right top, #051937, #041f48, #072559, #102a6b, #1d2f7c);
     color: white;
     display: flex;
     flex-direction: column;
@@ -206,7 +206,6 @@ header .menu a {
     grid-template-rows: 1.5fr 1fr;
 
 }
-
 .newsLetter {
     grid-area: suscripcion;
     display: flex;
@@ -313,13 +312,8 @@ footer a {
     }
     .redesMusk {
         justify-content:center;
-    } 
-
- .navbar-brand {
-    color: red;
-
-}
-    /*Main Index*/
+    }
+        /*Main Index*/
     #seccionDeEmpresa{
     font-size: 30px;
     padding: 10px;
@@ -507,7 +501,7 @@ footer a {
 }
 
 #indice ul li a {
-    color: white;
+    color: black;
     font-size: 15px;
 }
 #cuerpoBiografia {
@@ -517,7 +511,7 @@ footer a {
     align-items: center;
     background-image: url(../img/fondoB.jpg);
     background-size: 100% 100%;
-    color: white;
+    color: black;
 }
 #cuerpoBiografia img {
     width: 100%;
@@ -542,7 +536,7 @@ footer a {
     text-align: center;
 }
 div .accordion-body {
-    background-color: #070c1f;
+    background-image: linear-gradient(to right top, #051937, #041f48, #072559, #102a6b, #1d2f7c);
     color: white;
 }
 #generalidadesElon ol {
@@ -615,7 +609,10 @@ table tr:first-child {
         max-height: 76%;
         padding-top: 10px;
         padding-left: 10px;
-        overflow: scroll;
+        overflow-y: scroll;
+    }
+    #acordionHistoria::-webkit-scrollbar {
+        width: 1px;
     }
     #imgSpaceElon {
         grid-area: imgCoheteElon;
@@ -626,8 +623,76 @@ table tr:first-child {
     }
 }
 /*Main pagina libros*/
+#seccionLibros {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    align-items: center;
+    align-content: center;
+    background-image: url(../img/fondoB.jpg);
+    background-size: 100% 100%;
+    color: black;
+}
+.ficha {
+    max-width: 650px;
+    margin: 15px;
+    padding: 10px;
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+    border-radius: 5%;
+}
+.ficha a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#seccionLibros article img {
+    width: 60%;
+    margin: 10px;
+    padding: 10px;
+}
+#libroMusk {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#libroMusk iframe {
+    width: 90%;
+}
 
+/* Pantalla 1024px en adelante*/
+@media screen and (min-width: 1024px) {
+    #seccionLibros {
+        display: grid;
+        grid-template-areas: 
+        "fichaLibro1 videoLibro"
+        "fichaLibro2 fichaLibro3";
+        grid-template-columns: 1fr 1fr;
+        justify-items: center;
+        align-items: start;
+    }
 
+    #libro1 {
+        grid-area: fichaLibro1;
+    }
+    #libro2 {
+        grid-area: fichaLibro2;
+    }
+    #libro3 {
+        grid-area: fichaLibro3;
+    }
+    #libroMusk {
+        grid-area: videoLibro;
+    }
+    #libroMusk iframe {
+        position: absolute;
+        margin-top: 20vh;
+        width: 580px;
+        height: 300px;
+    }
+    .ficha p {
+        height: 270px;
+    }
+}
 /*Main pagina noticias*/
 
 
