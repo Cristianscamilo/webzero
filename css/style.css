@@ -645,9 +645,13 @@ table tr:first-child {
     flex-direction: column;
     align-items: center;
 }
+
+.ficha p {
+    min-height: 310px;
+}
 #seccionLibros article img {
     width: 60%;
-    margin: 10px;
+    margin: 20px;
     padding: 10px;
 }
 #libroMusk {
@@ -656,17 +660,28 @@ table tr:first-child {
     align-items: center;
 }
 #libroMusk iframe {
-    width: 90%;
+    margin-top: 20px;
+    width: 290px;
+    height: 200px;
 }
 
-/* Pantalla 1024px en adelante*/
-@media screen and (min-width: 1024px) {
+/* Pantalla 768px en adelante*/
+@media screen and (min-width: 768px) {
+    #libroMusk iframe {
+    width: 500px;
+    height: 300px;
+    }
+}
+
+/* Pantalla 1200px en adelante*/
+@media screen and (min-width: 1200px) {
     #seccionLibros {
         display: grid;
         grid-template-areas: 
         "fichaLibro1 videoLibro"
         "fichaLibro2 fichaLibro3";
         grid-template-columns: 1fr 1fr;
+        grid-template-rows: 900px 1000px;
         justify-items: center;
         align-items: start;
     }
@@ -686,7 +701,7 @@ table tr:first-child {
     #libroMusk iframe {
         position: absolute;
         margin-top: 20vh;
-        width: 580px;
+        width: 550px;
         height: 300px;
     }
     .ficha p {
@@ -694,6 +709,26 @@ table tr:first-child {
     }
 }
 /*Main pagina noticias*/
+#noticiasRecientes {
+    background-image: url(../img/fondoB.jpg);
+    background-size: 100% 100%;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#noticiasRecientes article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#noticiasRecientes article iframe {
+    width: 290px;
+    height: 200px;
+}
 
+#noticiasRecientes a {
+    width: 290px;
+}
 
 /*Main pagina contacto*/
