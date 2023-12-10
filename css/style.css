@@ -722,6 +722,7 @@ table tr:first-child {
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 20px;
 }
 #noticiasRecientes article iframe {
     width: 280px;
