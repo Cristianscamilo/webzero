@@ -78,26 +78,23 @@
         </nav>
     </header>
     <main>
-        <h2>CONTACTO</h2>
-        <section>
-            <article>
+        <section id="contactoSeccion">
                 <img src="../img/formulario_contactpo.png" alt="imagen de creación web">
-            </article>
-            <article>
+            <article id="formularioContacto">
                 <h2>Dejanos tus datos y generamos tu propia web</h2>
                 <form>
-                    <fieldset>
+                    <fieldset id="datosContacto">
                         <legend>Datos de contacto</legend>
                         <div>
-                            <label for="nombre">Nombres y apellidos</label>
+                            <label for="nombre">Nombres y apellidos:</label>
                             <input placeholder="Ingrese su nombre aqui" type="text" id="nombre">
                         </div>
                         <div>
-                            <label for="email">Email</label>
+                            <label for="email">Email:</label>
                             <input placeholder="Ejemplo@mail.com" type="email" id="email">
                         </div>
                     </fieldset>
-                    <fieldset>
+                    <fieldset id="detallesNegocio">
                         <legend>Información de negocio</legend>
                         <div>
                             <select name="tipo" id="tipo">
@@ -106,7 +103,7 @@
                             </select>
                         </div>
                         <h3>¿Hace cuanto inicia tu marca?</h3>
-                        <div>
+                        <div id="tiempoNegocio">
                             <label for=""> 0 a 1 año</label>
                             <input name="tiempo" type="radio">
                             <label for=""> 1 a 2 años</label>
@@ -117,7 +114,7 @@
                             <input name="tiempo" type="radio">
                         </div>
                     </fieldset>
-                    <div>
+                    <div id="terminosCondiciones">
                         <input type="checkbox" id="terminos">
                         <label for="terminos">Si, he leído y acepto los <a
                                 href="https://www.iubenda.com/es/help/37616-que-son-los-terminos-y-condiciones-y-para-que-sirven"
@@ -129,7 +126,6 @@
             </article>
         </section>
     </main>
-    <hr>
     <!-- Footer: pie de página -->
     <footer class="pieDePagina">
         <section class="menuYNewsletter">
