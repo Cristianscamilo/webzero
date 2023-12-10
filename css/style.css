@@ -231,6 +231,7 @@ footer form input {
     font-size: 10px;
     width: 95px;
     display: inline;
+    border-radius: 5px;
 }
 
 footer form button {
@@ -238,6 +239,7 @@ footer form button {
     font-size: 10px;
     color: white;
     background-color: black;
+    border-radius: 5px;
 }
 .boxRedes {
     grid-area: redesMusk;
