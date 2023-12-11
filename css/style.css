@@ -88,7 +88,9 @@ header .menu a {
  color: #1d2f7c;
  font-weight: 400;
 }
-
+header .menu a:hover {
+    text-decoration: underline;
+}
 .offcanvas {
     color: #1d2f7c;
 }
@@ -273,6 +275,9 @@ footer a {
     font-weight: 400;
     size: 10px;
 }
+footer a:hover {
+    text-decoration: underline;
+}
 
 
 .derechos{
@@ -285,7 +290,6 @@ footer a {
 
 /* Pantalla 600px en adelante*/
 @media screen and (min-width: 600px) {
-
     /*Global*/
     h1 {
         font-size: 50px;
@@ -501,7 +505,11 @@ footer a {
 .redesMusk{
     padding-right: 10px;
 }
-
+#indice a:hover {
+    color: #102a6b;
+    text-decoration: underline;
+    font-weight: bold;
+}
 #indice ul li a {
     color: black;
     font-size: 15px;
@@ -814,6 +822,10 @@ table tr:first-child {
 #datosContacto div {
     display: flex;
     flex-direction: column;
+}
+#datosContacto input:focus {
+    background-color: #1d2f7c;
+    color: white;
 }
 #detallesNegocio div {
     display: flex;
