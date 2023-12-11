@@ -11,18 +11,15 @@ h1 {
     font-size: 25px;
     font-weight: 700;
  }
-
 h2 {
     font-size: 20px;
     font-weight: 400;
     width: 70%;
 }
-
 h3 {
     font-size: 18px;
     text-align:center; 
 }
-
 h4 {
     font-size: 12px;
 }
@@ -33,25 +30,21 @@ a { text-decoration: none;
 ul {
     list-style-type: none;
 }
-
 .general {
     font-family: 'Rubik', sans-serif;
     font-weight: 300;
     font-size: 15px;
 
 }
-
 /*HEADER*/
 .encabezado{
     display: flex;
     flex-direction: row;
     margin: 4px;
 }
-
 .logoPrincipal img {
     width: 100%;
 }
-
 .tituloWeb {
     font-family: 'Cinzel', sans-serif;
     font-weight: 700;
@@ -59,13 +52,10 @@ ul {
     margin-top: 20px;
     display: block;
 }
-
 .musk {
     margin-left: 70px;
     display: block;
 }
-
-
 .redesMusk {
     width: 100%;
     display: flex;
@@ -108,78 +98,7 @@ header .menu a:hover {
 .offcanvas-body a{
     font-size: 20px;
 }
-
-/*Main index*/
-
-#introduccion {
-    margin: 10px;
-    padding: 10px;
-    text-align:left;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-#introduccion h2 {
-    width: 70%;
-    text-align: center;
-    margin-bottom: 20px;
-}
-.contenedorUno {
-    margin: 20px;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-#seccionDeEmpresa {
-    width: 100%;
-    text-align: center;
-    margin-top: 40px;
-
-}
-.tarjeta{
-    max-width:320px;
-    min-height: 293px;
-    padding: 10px;
-    margin: 10px 30px 30px 30px;
-    box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
-    text-align: start;
-    border-radius: 10%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.tarjeta h3 {
-    margin: 10px;
-}
-.tarjeta p {
-    min-width: 280px;
-}
-
-.tarjeta img {
-    width: 130px;
-    height: 70px;
-    border-radius: 10%;
-    margin-top: 15px;
-}
-
-#cierre {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
-}
-
-#cierre iframe {
-    width: 290px;
-    height: 200px;
-}
-
 /*Footer*/
-
 .pieDePagina {
     background-image: linear-gradient(to right top, #051937, #041f48, #072559, #102a6b, #1d2f7c);
     color: white;
@@ -278,8 +197,6 @@ footer a {
 footer a:hover {
     text-decoration: underline;
 }
-
-
 .derechos{
     font-size: 10px;
     margin: 5px;
@@ -287,7 +204,6 @@ footer a:hover {
     justify-content: center;
     grid-area: derechosWeb;
 }
-
 /* Pantalla 600px en adelante*/
 @media screen and (min-width: 600px) {
     /*Global*/
@@ -318,18 +234,6 @@ footer a:hover {
     }
     .redesMusk {
         justify-content:center;
-    }
-        /*Main Index*/
-    #seccionDeEmpresa{
-    font-size: 30px;
-    padding: 10px;
-    }
-    .tarjeta{
-        min-width: 450px;
-        min-height: 320px;
-    }
-    .tarjeta img {
-        margin-top: 20px;
     }
     /*Footer*/
     .menuYNewsletter {
@@ -374,12 +278,135 @@ footer a:hover {
         justify-content: flex-end;
     }
 }
-
 /* Pantalla 768px en adelante*/
 @media screen and (min-width: 768px) {
     .redesMusk {
         justify-content:end;
     }
+}
+/* Pantalla 1200px en adelante*/
+@media screen and (min-width: 1200px) {
+    /*Footer*/
+    .listadoMenu {
+        font-size: 20px;
+        margin-top: 40px;
+    }
+
+    .newsLetter h4 {
+        font-size: 20px;
+        width: 100%;
+    }
+
+    footer form input {
+        font-size: 18px;
+        width: 200px;
+        display: inline;
+    }
+    footer form button {
+        width: 130px;
+        font-size: 20px;
+    }
+    .redesFooter li img{
+        width: 50px;
+        margin-right: 10px;
+    }
+    .boxRedes {
+        align-items: flex-start;
+        justify-content: flex-end;
+    }
+    /*Footer*/
+    .menuYNewsletter {
+        grid-template-areas:
+        "listaDirecciones    .           .            redesMusk  "
+        "listaDirecciones    logo2       suscripcion  redesMusk  "
+        ".                   derechosWeb .             .         ";
+        grid-template-columns: 1fr 50px 1fr 1fr;
+        grid-template-rows: 1fr 1fr 20px;
+    
+    }
+    .boxRedes {
+        align-items: center;
+    }
+}
+/*Main index*/
+#introduccion {
+    margin: 10px;
+    padding: 10px;
+    text-align:left;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#introduccion h2 {
+    width: 70%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.contenedorUno {
+    margin: 20px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#seccionDeEmpresa {
+    width: 100%;
+    text-align: center;
+    margin-top: 40px;
+
+}
+.tarjeta{
+    max-width:320px;
+    min-height: 293px;
+    padding: 10px;
+    margin: 10px 30px 30px 30px;
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+    text-align: start;
+    border-radius: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.tarjeta h3 {
+    margin: 10px;
+}
+.tarjeta p {
+    min-width: 280px;
+}
+.tarjeta img {
+    width: 130px;
+    height: 70px;
+    border-radius: 10%;
+    margin-top: 15px;
+}
+#cierre {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+#cierre iframe {
+    width: 290px;
+    height: 200px;
+}
+/* Pantalla 600px en adelante*/
+@media screen and (min-width: 600px) {
+    #seccionDeEmpresa{
+        font-size: 30px;
+        padding: 10px;
+        }
+        .tarjeta{
+            min-width: 450px;
+            min-height: 320px;
+        }
+        .tarjeta img {
+            margin-top: 20px;
+        }
+}
+/* Pantalla 768px en adelante*/
+@media screen and (min-width: 768px) {
     .tarjeta {
         max-height: 410px;
         min-width: 380px;
@@ -427,10 +454,8 @@ footer a:hover {
         height: 300px;
     }
 }
-
 /* Pantalla 1200px en adelante*/
 @media screen and (min-width: 1200px) {
-
     .contenedorUno{
         grid-template-areas:
         "proyecto1  proyecto2   proyecto3"
@@ -457,48 +482,6 @@ footer a:hover {
     #cierre iframe {
         width: 650px;
         height: 400px;
-    }
-    /*Footer*/
-
-    .listadoMenu {
-        font-size: 20px;
-        margin-top: 40px;
-    }
-
-    .newsLetter h4 {
-        font-size: 20px;
-        width: 100%;
-    }
-
-    footer form input {
-        font-size: 18px;
-        width: 200px;
-        display: inline;
-    }
-    footer form button {
-        width: 130px;
-        font-size: 20px;
-    }
-    .redesFooter li img{
-        width: 50px;
-        margin-right: 10px;
-    }
-    .boxRedes {
-        align-items: flex-start;
-        justify-content: flex-end;
-    }
-    /*Footer*/
-    .menuYNewsletter {
-        grid-template-areas:
-        "listaDirecciones    .           .            redesMusk  "
-        "listaDirecciones    logo2       suscripcion  redesMusk  "
-        ".                   derechosWeb .             .         ";
-        grid-template-columns: 1fr 50px 1fr 1fr;
-        grid-template-rows: 1fr 1fr 20px;
-    
-    }
-    .boxRedes {
-        align-items: center;
     }
 }
 /*Main pagina biografia*/
@@ -837,6 +820,9 @@ table tr:first-child {
 #terminosCondiciones {
     display: flex;
     flex-direction: row;
+}
+#terminosCondiciones input {
+    margin-right: 10px;
 }
 
 #formularioContacto button {
