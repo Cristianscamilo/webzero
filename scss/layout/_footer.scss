@@ -1,0 +1,223 @@
+//Footer
+.pieDePagina {
+    background-image: linear-gradient(to right top, #051937, #041f48, #072559, #102a6b, #1d2f7c);
+    color: white;
+    display: flex;
+    flex-direction: column;
+
+    .menuYNewsletter {
+        display: grid;
+        grid-template-areas:
+            "listaDirecciones    logo2           redesMusk   redesMusk"
+            "listaDirecciones    suscripcion     suscripcion suscripcion";
+        grid-template-columns: 1fr 50px 1fr;
+        grid-template-rows: 1.5fr 1fr;
+
+        .listadoMenu {
+            grid-area: listaDirecciones;
+            font-size: 15px;
+            margin-top: 20px;
+
+            .menuFooter {
+                li {
+                    a {
+                        color: white;
+                        font-weight: 400;
+                        size: 10px;
+
+                        &:hover {
+                            text-decoration: underline;
+                        }
+                    }
+                }
+            }
+        }
+
+        .segundoLogo {
+            grid-area: logo2;
+            display: flex;
+            flex-direction: column-reverse;
+
+            img {
+                width: 40px;
+                border-radius: 50%;
+            }
+        }
+
+        .newsLetter {
+            grid-area: suscripcion;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+
+            h4 {
+                width: 140px;
+                font-size: 10px;
+            }
+
+            form {
+                display: flex;
+                flex-direction: row;
+
+                label[for="email"] {
+                    display: none;
+                }
+
+                input {
+                    font-size: 10px;
+                    width: 95px;
+                    display: inline;
+                    border-radius: 5px;
+                }
+
+                button {
+                    width: 60px;
+                    font-size: 10px;
+                    color: white;
+                    background-color: black;
+                    border-radius: 5px;
+                }
+            }
+        }
+
+        .boxRedes {
+            grid-area: redesMusk;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+
+            .redesFooter {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-content: center;
+                margin-top: 20px;
+
+                li {
+                    a {
+                        img {
+                            width: 20px;
+                            border-radius: 50%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .derechos {
+        font-size: 10px;
+        margin: 5px;
+        display: flex;
+        justify-content: center;
+        grid-area: derechosWeb;
+    }
+}
+
+// Pantalla 600px en adelante
+@media screen and (min-width: 600px) {
+    .menuYNewsletter {
+        grid-template-areas:
+            "listaDirecciones    .            redesMusk   "
+            "listaDirecciones    logo2        suscripcion "
+            ".                   derechosWeb  .           ";
+        grid-template-columns: 1fr 50px 1fr;
+        grid-template-rows: 1fr 1fr 20px;
+
+        .segundoLogo {
+            align-items: center;
+            justify-content: flex-start;
+        }
+
+        .newsLetter {
+            h4 {
+                font-size: 12px;
+                width: 100%;
+
+                input {
+                    font-size: 12px;
+                    width: 120px;
+                    display: inline;
+                }
+
+                button {
+                    width: 80px;
+                    font-size: 12px;
+                }
+            }
+        }
+
+        .boxRedes {
+            align-items: flex-start;
+            justify-content: flex-end;
+
+            .redesFooter {
+                li {
+                    a {
+                        img {
+                            width: 30px;
+                            margin-right: 10px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+//Pantalla 1200px en adelante
+
+@media screen and (min-width: 1200px) {
+    .pieDePagina {
+        .menuYNewsletter {
+            grid-template-areas:
+                "listaDirecciones    .           .            redesMusk  "
+                "listaDirecciones    logo2       suscripcion  redesMusk  "
+                ".                   derechosWeb .             .         ";
+            grid-template-columns: 1fr 50px 1fr 1fr;
+            grid-template-rows: 1fr 1fr 20px;
+
+            .listadoMenu {
+                font-size: 20px;
+                margin-top: 40px;
+            }
+            .segundoLogo {
+                    justify-content: center;
+            }
+
+            .newsLetter {
+                h4 {
+                    font-size: 20px;
+                    width: 100%;
+                }
+
+                form {
+                    input {
+                        font-size: 18px;
+                        width: 200px;
+                        display: inline;
+                    }
+
+                    button {
+                        width: 130px;
+                        font-size: 20px;
+                    }
+                }
+            }
+
+            .boxRedes {
+                align-items: flex-start;
+                justify-content: flex-end;
+
+                .redesFooter {
+                    li {
+                        img {
+                            min-width: 40px;
+                            margin-right: 10px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

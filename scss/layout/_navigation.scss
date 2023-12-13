@@ -1,0 +1,29 @@
+.menu {
+    padding-left: 10px;
+    padding-right: 10px;
+
+    a {
+        color: #1d2f7c;
+        font-weight: 400;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+    .offcanvas {
+        color: #1d2f7c;
+
+        .offcanvas-header {
+            justify-content: flex-end;
+
+            .offcanvas-title {
+                font-size: 25px;
+            }
+        }
+        .offcanvas-body {
+            a {
+                font-size: 20px;
+            }
+        }
+    }
+}
