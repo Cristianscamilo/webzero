@@ -1,0 +1,171 @@
+/*Main pagina biografia*/
+main {
+    #cuerpoBiografia {
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+        align-items: center;
+        background-image: url(../img/fondoB.jpg);
+        background-size: 100% 100%;
+        color: black;
+
+        #indice {
+            ul {
+                li {
+                    a {
+                        color: black;
+                        font-size: 15px;
+
+                        &:hover {
+                            color: #102a6b;
+                            text-decoration: underline;
+                            font-weight: bold;
+                        }
+                    }
+                }
+            }
+        }
+
+        #imgTeslaElon {
+            img {
+                width: 100%;
+                max-width: 600px;
+                padding: 10px;
+                justify-content: center;
+            }
+
+            #wikipedia {
+                font-size: 8px;
+                display: block;
+                text-align: center;
+                color: black;
+                margin-bottom: 10px;
+
+            }
+
+        }
+
+        #acordionHistoria {
+
+            .accordion-button {
+                width: 95vw;
+            }
+        }
+
+        #imgSpaceElon {
+            img {
+                width: 100%;
+                max-width: 600px;
+                padding: 10px;
+                justify-content: center;
+            }
+
+        }
+
+        #generalidadesElon {
+            #metodo {
+                padding: 10px;
+
+                p {
+                    padding: 5px 20px 5px 20px;
+                }
+
+                ol {
+                    il {
+                        padding: 10PX;
+                        margin-left: 10px;
+                    }
+
+                }
+            }
+
+            #cargos {
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+                padding: 10px;
+
+                h3 {
+                    width: 100%;
+                    font-weight: 700;
+                    text-align: center;
+                    padding: 10px;
+                }
+
+                table {
+                    border-collapse: collapse;
+
+                    tr {
+                        td {
+                            padding: 2px;
+                            font-size: 80%;
+                            text-align: center;
+                            border: 1px solid grey;
+
+                            img {
+                                width: 80px;
+                            }
+                        }
+
+                        &:first-child {
+                            font-weight: bold;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* Pantalla 1024px en adelante*/
+@media screen and (min-width: 1024px) {
+    main {
+        #cuerpoBiografia {
+
+            display: grid;
+            grid-template-areas:
+                "indexBiografia       .              "
+                "imgTeslaElon         historiaElon   "
+                "metodoProyectos      imgCoheteElon";
+            grid-template-columns: 50vw 50vw;
+            grid-template-rows: 160px 30rem 1fr;
+            align-items: start;
+            justify-items: start;
+
+            #indice {
+                grid-area: indexBiografia;
+            }
+
+            #imgTeslaElon {
+                grid-area: imgTeslaElon;
+            }
+
+            #acordionHistoria {
+                grid-area: historiaElon;
+                max-width: 45vw;
+                max-height: 76%;
+                padding-top: 10px;
+                padding-left: 10px;
+                overflow-y: scroll;
+
+                .accordion-button {
+                    width: 45vw;
+                }
+
+                &::-webkit-scrollbar {
+                    width: 1px;
+                }
+            }
+
+
+            #imgSpaceElon {
+                grid-area: imgCoheteElon;
+                width: 48vw;
+            }
+
+            #generalidadesElon {
+                grid-area: metodoProyectos;
+            }
+        }
+    }
+}

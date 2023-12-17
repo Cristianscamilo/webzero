@@ -8,8 +8,8 @@
     .menuYNewsletter {
         display: grid;
         grid-template-areas:
-            "listaDirecciones    logo2           redesMusk   redesMusk"
-            "listaDirecciones    suscripcion     suscripcion suscripcion";
+            "listaDirecciones    logo2           redesMusk   "
+            "listaDirecciones    suscripcion     suscripcion ";
         grid-template-columns: 1fr 50px 1fr;
         grid-template-rows: 1.5fr 1fr;
 
@@ -116,47 +116,51 @@
 
 // Pantalla 600px en adelante
 @media screen and (min-width: 600px) {
-    .menuYNewsletter {
-        grid-template-areas:
-            "listaDirecciones    .            redesMusk   "
-            "listaDirecciones    logo2        suscripcion "
-            ".                   derechosWeb  .           ";
-        grid-template-columns: 1fr 50px 1fr;
-        grid-template-rows: 1fr 1fr 20px;
+    .pieDePagina {
+        .menuYNewsletter {
+            grid-template-areas:
+                "listaDirecciones    .            redesMusk   "
+                "listaDirecciones    logo2        suscripcion "
+                ".                   derechosWeb  .           ";
+            grid-template-columns: 1fr 50px 1fr;
+            grid-template-rows: 1fr 1fr 20px;
 
-        .segundoLogo {
-            align-items: center;
-            justify-content: flex-start;
-        }
+            .segundoLogo {
+                justify-content: flex-end;
+            }
 
-        .newsLetter {
-            h4 {
-                font-size: 12px;
-                width: 100%;
-
-                input {
+            .newsLetter {
+                h4 {
                     font-size: 12px;
-                    width: 120px;
-                    display: inline;
+                    width: 100%;
                 }
 
-                button {
-                    width: 80px;
-                    font-size: 12px;
+                form {
+
+                    input {
+                        font-size: 12px;
+                        width: 120px;
+                        display: inline;
+                    }
+
+                    button {
+                        width: 80px;
+                        font-size: 12px;
+                    }
                 }
             }
-        }
 
-        .boxRedes {
-            align-items: flex-start;
-            justify-content: flex-end;
+            .boxRedes {
+                align-items: start;
+                justify-content: flex-end;
 
-            .redesFooter {
-                li {
-                    a {
-                        img {
-                            width: 30px;
-                            margin-right: 10px;
+                .redesFooter {
+                    li {
+                        a {
+                            img {
+                                width: 30px;
+                                margin-right: 10px;
+                            }
                         }
                     }
                 }
@@ -181,14 +185,18 @@
                 font-size: 20px;
                 margin-top: 40px;
             }
+
             .segundoLogo {
-                    justify-content: center;
+                justify-content: center;
             }
 
             .newsLetter {
+                align-items: center;
+
                 h4 {
                     font-size: 20px;
-                    width: 100%;
+                    display: flex;
+                    justify-content: center;
                 }
 
                 form {
