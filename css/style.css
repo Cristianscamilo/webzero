@@ -730,51 +730,61 @@ main #noticiasRecientes article .twitter-tweet-rendered iframe {
   }
 }
 /*Main pagina contacto*/
-#contactoSeccion {
+main #contactoSeccion {
   display: flex;
   flex-direction: column;
   padding: 10px;
   align-items: center;
+  margin-bottom: 20px;
 }
-
-#contactoSeccion img {
+main #contactoSeccion img {
   width: 90%;
+  margin-top: 20px;
+  padding: 10px;
+  border: 0;
 }
-
-#formularioContacto {
+main #contactoSeccion #formularioContacto {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-left: 10%;
 }
-
-#datosContacto div {
+main #contactoSeccion #formularioContacto h2 {
+  width: 90%;
+}
+main #contactoSeccion #formularioContacto form {
+  margin-top: 20px;
+}
+main #contactoSeccion #formularioContacto form #datosContacto div {
   display: flex;
   flex-direction: column;
 }
-
-#datosContacto input:focus {
+main #contactoSeccion #formularioContacto form #datosContacto div input {
+  width: 80%;
+  margin: 5px;
+  border: 1px solid black;
+}
+main #contactoSeccion #formularioContacto form #datosContacto div input:focus {
   background-color: #1d2f7c;
   color: white;
 }
-
-#detallesNegocio div {
+main #contactoSeccion #formularioContacto form #detallesNegocio div {
   display: flex;
   flex-direction: row;
   font-size: 12px;
   justify-content: space-between;
   max-width: 420px;
+  margin: 20px;
+  padding: 2px;
 }
-
-#terminosCondiciones {
+main #contactoSeccion #formularioContacto form #terminosCondiciones {
   display: flex;
   flex-direction: row;
 }
-
-#terminosCondiciones input {
+main #contactoSeccion #formularioContacto form #terminosCondiciones input {
   margin-right: 10px;
 }
-
-#formularioContacto button {
+main #contactoSeccion #formularioContacto form button {
   color: white;
   background-color: black;
   border-radius: 10%;
@@ -782,22 +792,34 @@ main #noticiasRecientes article .twitter-tweet-rendered iframe {
 
 /* Pantalla 768px en adelante*/
 @media screen and (min-width: 768px) {
-  #contactoSeccion h2 {
+  main #contactoSeccion img {
+    width: 40%;
+  }
+  main #contactoSeccion h2 {
     font-size: 30px;
+    width: 50%;
+  }
+  main #contactoSeccion #formularioContacto #detallesNegocio legend {
+    margin-bottom: 10px;
   }
 }
 /* Pantalla 1200px en adelante*/
 @media screen and (min-width: 1200px) {
-  #contactoSeccion h2 {
-    font-size: 30px;
-  }
-  #contactoSeccion {
+  main #contactoSeccion {
     display: flex;
     flex-direction: row;
   }
-  #contactoSeccion img {
-    width: 40%;
-    margin-right: 20px;
+  main #contactoSeccion img {
+    width: 50%;
+    margin-right: 10px;
+  }
+  main #contactoSeccion #formularioContacto {
+    margin-left: 10px;
+    padding-left: 10px;
+    align-items: flex-start;
+  }
+  main #contactoSeccion #formularioContacto h2 {
+    font-size: 30px;
   }
 }
 
