@@ -1,0 +1,115 @@
+/*Main pagina libros*/
+main {
+    #seccionLibros {
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+        align-items: center;
+        align-content: center;
+        background-image: url(../img/fondoB.jpg);
+        background-size: 100% 100%;
+        color: black;
+
+        .ficha {
+            max-width: 650px;
+            margin: 15px;
+            padding: 10px;
+            box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+            border-radius: 5%;
+
+            a {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                img {
+                    width: 60%;
+                    margin: 20px;
+                    padding: 10px;
+                }
+            }
+
+            p {
+                min-height: 310px;
+            }
+        }
+
+        #libroMusk {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+            border-radius: 5%;
+            margin: 15px;
+            padding: 10px;
+
+            iframe {
+                margin-top: 20px;
+                width: 290px;
+                height: 200px;
+            }
+        }
+    }
+}
+
+/* Pantalla 768px en adelante*/
+@media screen and (min-width: 768px) {
+    main {
+        #seccionLibros {
+            #libroMusk {
+                iframe {
+                    min-width: 500px;
+                    max-height: 300px;
+                }
+            }
+        }
+    }
+}
+
+
+/* Pantalla 1200px en adelante*/
+@media screen and (min-width: 1200px) {
+    main {
+        #seccionLibros {
+            display: grid;
+            grid-template-areas:
+                "fichaLibro1 videoLibro"
+                "fichaLibro2 fichaLibro3";
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 900px 1000px;
+            justify-items: center;
+            align-items: center;
+
+            .ficha {
+                p {
+                    max-height: 270px;
+                }
+            }
+
+            #libro1 {
+                grid-area: fichaLibro1;
+            }
+
+            #libro2 {
+                grid-area: fichaLibro2;
+            }
+
+            #libro3 {
+                grid-area: fichaLibro3;
+            }
+
+            #libroMusk {
+                grid-area: videoLibro;
+
+                iframe {
+                    width: 550px;
+                    height: 300px;
+                }
+
+                p {
+                    font-weight: 400;
+                }
+            }
+        }
+    }
+}

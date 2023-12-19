@@ -46,11 +46,11 @@ h4 {
     font-weight: 700;
   }
   h2 {
-    font-size: 30px;
+    font-size: 26px;
     font-weight: 400;
   }
   h3 {
-    font-size: 25px;
+    font-size: 24px;
     text-align: center;
   }
   h4 {
@@ -563,7 +563,7 @@ main #cuerpoBiografia #generalidadesElon #cargos table tr:first-child {
   }
 }
 /*Main pagina libros*/
-#seccionLibros {
+main #seccionLibros {
   display: flex;
   flex-direction: column;
   padding: 10px;
@@ -573,38 +573,36 @@ main #cuerpoBiografia #generalidadesElon #cargos table tr:first-child {
   background-size: 100% 100%;
   color: black;
 }
-
-.ficha {
+main #seccionLibros .ficha {
   max-width: 650px;
   margin: 15px;
   padding: 10px;
   box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
   border-radius: 5%;
 }
-
-.ficha a {
+main #seccionLibros .ficha a {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-
-.ficha p {
-  min-height: 310px;
-}
-
-#seccionLibros article img {
+main #seccionLibros .ficha a img {
   width: 60%;
   margin: 20px;
   padding: 10px;
 }
-
-#libroMusk {
+main #seccionLibros .ficha p {
+  min-height: 310px;
+}
+main #seccionLibros #libroMusk {
   display: flex;
   flex-direction: column;
   align-items: center;
+  box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+  border-radius: 5%;
+  margin: 15px;
+  padding: 10px;
 }
-
-#libroMusk iframe {
+main #seccionLibros #libroMusk iframe {
   margin-top: 20px;
   width: 290px;
   height: 200px;
@@ -612,45 +610,46 @@ main #cuerpoBiografia #generalidadesElon #cargos table tr:first-child {
 
 /* Pantalla 768px en adelante*/
 @media screen and (min-width: 768px) {
-  #libroMusk iframe {
-    width: 500px;
-    height: 300px;
+  main #seccionLibros #libroMusk iframe {
+    min-width: 500px;
+    max-height: 300px;
   }
 }
 /* Pantalla 1200px en adelante*/
 @media screen and (min-width: 1200px) {
-  #seccionLibros {
+  main #seccionLibros {
     display: grid;
     grid-template-areas: "fichaLibro1 videoLibro" "fichaLibro2 fichaLibro3";
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 900px 1000px;
     justify-items: center;
-    align-items: start;
+    align-items: center;
   }
-  #libro1 {
+  main #seccionLibros .ficha p {
+    max-height: 270px;
+  }
+  main #seccionLibros #libro1 {
     grid-area: fichaLibro1;
   }
-  #libro2 {
+  main #seccionLibros #libro2 {
     grid-area: fichaLibro2;
   }
-  #libro3 {
+  main #seccionLibros #libro3 {
     grid-area: fichaLibro3;
   }
-  #libroMusk {
+  main #seccionLibros #libroMusk {
     grid-area: videoLibro;
   }
-  #libroMusk iframe {
-    position: absolute;
-    margin-top: 20vh;
+  main #seccionLibros #libroMusk iframe {
     width: 550px;
     height: 300px;
   }
-  .ficha p {
-    height: 270px;
+  main #seccionLibros #libroMusk p {
+    font-weight: 400;
   }
 }
 /*Main pagina noticias*/
-#noticiasRecientes {
+main #noticiasRecientes {
   background-image: url(../img/fondoB.jpg);
   background-size: 100% 100%;
   color: black;
@@ -659,44 +658,32 @@ main #cuerpoBiografia #generalidadesElon #cargos table tr:first-child {
   align-items: center;
   padding: 20px;
 }
-
-#noticiasRecientes article {
+main #noticiasRecientes article {
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 20px;
 }
-
-#noticiasRecientes article iframe {
+main #noticiasRecientes article iframe {
   width: 280px;
   height: 200px;
   margin-top: 20px;
   margin-bottom: 20px;
 }
-
-.twitter-tweet {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-#noticiasRecientes a {
-  width: 290px;
+main #noticiasRecientes article .twitter-tweet-rendered iframe {
+  width: 290px !important;
 }
 
 /* Pantalla 768px en adelante*/
 @media screen and (min-width: 768px) {
-  #noticiasRecientes article iframe {
+  main #noticiasRecientes article iframe {
     width: 500px;
     height: 300px;
-  }
-  .twitter-tweet {
-    width: 400px;
   }
 }
 /* Pantalla 1200px en adelante*/
 @media screen and (min-width: 1200px) {
-  #noticiasRecientes {
+  main #noticiasRecientes {
     display: grid;
     grid-template-areas: "videoUno   videoDos    ." "postTres   postUno    postDos";
     grid-template-columns: repeat(3, 33%);
@@ -705,31 +692,39 @@ main #cuerpoBiografia #generalidadesElon #cargos table tr:first-child {
     justify-items: center;
     position: relative;
   }
-  #primerVideoNews {
+  main #noticiasRecientes #primerVideoNews {
     grid-area: videoUno;
-    width: 400px;
-    padding: 20px;
-    margin: 20px;
-    left: 10%;
+    width: 300px;
+    padding: 10px;
+    margin: 10px;
+    left: 40%;
     position: absolute;
   }
-  #segundoVideoNews {
+  main #noticiasRecientes #primerVideoNews h2 {
+    font-size: 20px;
+    width: 100%;
+  }
+  main #noticiasRecientes #segundoVideoNews {
     grid-area: videoDos;
-    width: 400px;
-    padding: 20px;
-    margin: 20px;
-    left: 80%;
+    width: 500px;
+    padding: 10px;
+    margin: 10px;
+    left: 60%;
     position: absolute;
   }
-  #xpost1 {
+  main #noticiasRecientes #segundoVideoNews h2 {
+    font-size: 20px;
+    width: 100%;
+  }
+  main #noticiasRecientes #xpost1 {
     grid-area: postUno;
     width: 300px;
   }
-  #xpost3 {
+  main #noticiasRecientes #xpost3 {
     grid-area: postDos;
     width: 300px;
   }
-  #xpost2 {
+  main #noticiasRecientes #xpost2 {
     grid-area: postTres;
     width: 300px;
   }

@@ -1,0 +1,106 @@
+/*Main pagina noticias*/
+main {
+    #noticiasRecientes {
+        background-image: url(../img/fondoB.jpg);
+        background-size: 100% 100%;
+        color: black;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+
+        article {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+
+            iframe {
+                width: 280px;
+                height: 200px;
+                margin-top: 20px;
+                margin-bottom: 20px;
+            }
+        }
+
+        article {
+            .twitter-tweet-rendered {
+                iframe {
+                    width: 290px !important;
+                }
+            }
+        }
+    }
+}
+
+
+/* Pantalla 768px en adelante*/
+@media screen and (min-width: 768px) {
+    main {
+        #noticiasRecientes {
+            article {
+                iframe {
+                    width: 500px;
+                    height: 300px;
+                }
+            }
+        }
+    }
+}
+
+/* Pantalla 1200px en adelante*/
+@media screen and (min-width: 1200px) {
+    main {
+        #noticiasRecientes {
+            display: grid;
+            grid-template-areas:
+                "videoUno   videoDos    ."
+                "postTres   postUno    postDos";
+            grid-template-columns: repeat(3, 33%);
+            grid-template-rows: 450px 450px;
+            align-items: stretch;
+            justify-items: center;
+            position: relative;
+
+            #primerVideoNews {
+                grid-area: videoUno;
+                width: 300px;
+                padding: 10px;
+                margin: 10px;
+                left: 40%;
+                position: absolute;
+                h2 {
+                    font-size: 20px;
+                    width: 100%;
+                }
+
+            }
+            #segundoVideoNews {
+                grid-area: videoDos;
+                width: 500px;
+                padding: 10px;
+                margin: 10px;
+                left: 60%;
+                position: absolute;
+                h2 {
+                    font-size: 20px;
+                    width: 100%;
+                }
+            }
+            #xpost1 {
+                grid-area: postUno;
+                width: 300px;
+            }
+    
+            #xpost3 {
+                grid-area: postDos;
+                width: 300px;
+            }
+    
+            #xpost2 {
+                grid-area: postTres;
+                width: 300px;
+            }
+        } 
+    }
+}
