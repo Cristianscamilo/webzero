@@ -1,3 +1,4 @@
+/*Variables*/
 * {
   margin: 0;
   padding: 0;
@@ -65,14 +66,15 @@ h4 {
   padding-right: 10px;
 }
 .menu a {
-  color: #1d2f7c;
+  color: rgb(0, 0, 0);
   font-weight: 400;
 }
 .menu a:hover {
+  color: #1d2e7c;
   text-decoration: underline;
 }
 .menu .offcanvas {
-  color: #1d2f7c;
+  color: rgb(0, 0, 0);
 }
 .menu .offcanvas .offcanvas-header {
   justify-content: flex-end;
@@ -82,6 +84,10 @@ h4 {
 }
 .menu .offcanvas .offcanvas-body a {
   font-size: 20px;
+  color: rgb(0, 0, 0);
+}
+.menu .offcanvas .offcanvas-body a:hover {
+  color: #1d2e7c;
 }
 
 header .encabezado {
@@ -130,7 +136,7 @@ header .encabezado .redesMusk li a img {
 }
 .pieDePagina {
   background-image: linear-gradient(to right top, #051937, #041f48, #072559, #102a6b, #1d2f7c);
-  color: white;
+  color: rgb(255, 255, 255);
   display: flex;
   flex-direction: column;
 }
@@ -146,11 +152,12 @@ header .encabezado .redesMusk li a img {
   margin-top: 20px;
 }
 .pieDePagina .menuYNewsletter .listadoMenu .menuFooter li a {
-  color: white;
+  color: rgb(255, 255, 255);
   font-weight: 400;
   size: 10px;
 }
 .pieDePagina .menuYNewsletter .listadoMenu .menuFooter li a:hover {
+  color: rgba(255, 255, 255, 0.825);
   text-decoration: underline;
 }
 .pieDePagina .menuYNewsletter .segundoLogo {
@@ -188,8 +195,8 @@ header .encabezado .redesMusk li a img {
 .pieDePagina .menuYNewsletter .newsLetter form button {
   width: 60px;
   font-size: 10px;
-  color: white;
-  background-color: black;
+  color: rgb(255, 255, 255);
+  background-color: rgb(0, 0, 0);
   border-radius: 5px;
 }
 .pieDePagina .menuYNewsletter .boxRedes {
@@ -249,6 +256,9 @@ header .encabezado .redesMusk li a img {
   }
 }
 @media screen and (min-width: 1200px) {
+  .pieDePagina {
+    min-height: 20vh;
+  }
   .pieDePagina .menuYNewsletter {
     grid-template-areas: "listaDirecciones    .           .            redesMusk  " "listaDirecciones    logo2       suscripcion  redesMusk  " ".                   derechosWeb .             .         ";
     grid-template-columns: 1fr 50px 1fr 1fr;
@@ -453,14 +463,14 @@ main #cuerpoBiografia {
   align-items: center;
   background-image: url(../img/fondoB.jpg);
   background-size: 100% 100%;
-  color: black;
+  color: rgb(0, 0, 0);
 }
 main #cuerpoBiografia #indice ul li a {
-  color: black;
+  color: rgb(0, 0, 0);
   font-size: 15px;
 }
 main #cuerpoBiografia #indice ul li a:hover {
-  color: #102a6b;
+  color: #1d2e7c;
   text-decoration: underline;
   font-weight: bold;
 }
@@ -474,7 +484,7 @@ main #cuerpoBiografia #imgTeslaElon #wikipedia {
   font-size: 8px;
   display: block;
   text-align: center;
-  color: black;
+  color: rgb(0, 0, 0);
   margin-bottom: 10px;
 }
 main #cuerpoBiografia #acordionHistoria .accordion-button {
@@ -502,7 +512,7 @@ main #cuerpoBiografia #generalidadesElon #cargos {
   text-align: center;
   padding: 10px;
 }
-main #cuerpoBiografia #generalidadesElon #cargos h3 {
+main #cuerpoBiografia #generalidadesElon #cargos h2 {
   width: 100%;
   font-weight: 700;
   text-align: center;
@@ -571,7 +581,7 @@ main #seccionLibros {
   align-content: center;
   background-image: url(../img/fondoB.jpg);
   background-size: 100% 100%;
-  color: black;
+  color: rgb(0, 0, 0);
 }
 main #seccionLibros .ficha {
   max-width: 650px;
@@ -652,7 +662,7 @@ main #seccionLibros #libroMusk iframe {
 main #noticiasRecientes {
   background-image: url(../img/fondoB.jpg);
   background-size: 100% 100%;
-  color: black;
+  color: rgb(0, 0, 0);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -762,11 +772,11 @@ main #contactoSeccion #formularioContacto form #datosContacto div {
 main #contactoSeccion #formularioContacto form #datosContacto div input {
   width: 80%;
   margin: 5px;
-  border: 1px solid black;
+  border: 1px solid rgb(0, 0, 0);
 }
 main #contactoSeccion #formularioContacto form #datosContacto div input:focus {
-  background-color: #1d2f7c;
-  color: white;
+  background-color: #1d2e7c;
+  color: rgba(255, 255, 255, 0.825);
 }
 main #contactoSeccion #formularioContacto form #detallesNegocio div {
   display: flex;
@@ -785,8 +795,8 @@ main #contactoSeccion #formularioContacto form #terminosCondiciones input {
   margin-right: 10px;
 }
 main #contactoSeccion #formularioContacto form button {
-  color: white;
-  background-color: black;
+  color: rgb(255, 255, 255);
+  background-color: rgb(0, 0, 0);
   border-radius: 10%;
 }
 

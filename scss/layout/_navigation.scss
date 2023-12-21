@@ -3,15 +3,16 @@
     padding-right: 10px;
 
     a {
-        color: #1d2f7c;
+        color: $color-letra-principal;
         font-weight: 400;
 
         &:hover {
+            color: $color-pseudoclases-primario;
             text-decoration: underline;
         }
     }
     .offcanvas {
-        color: #1d2f7c;
+        color: $color-letra-principal;
 
         .offcanvas-header {
             justify-content: flex-end;
@@ -23,6 +24,11 @@
         .offcanvas-body {
             a {
                 font-size: 20px;
+                color: $color-letra-principal;
+
+                &:hover {
+                    color: $color-pseudoclases-primario;
+                }
             }
         }
     }

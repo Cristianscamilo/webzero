@@ -1,7 +1,7 @@
 //Footer
 .pieDePagina {
-    background-image: linear-gradient(to right top, #051937, #041f48, #072559, #102a6b, #1d2f7c);
-    color: white;
+    background-image: $gradiente-background;
+    color: $color-letra-secundario;
     display: flex;
     flex-direction: column;
 
@@ -21,11 +21,12 @@
             .menuFooter {
                 li {
                     a {
-                        color: white;
+                        color: $color-letra-secundario;
                         font-weight: 400;
                         size: 10px;
 
                         &:hover {
+                            color: $color-pseudoclases-secundario;
                             text-decoration: underline;
                         }
                     }
@@ -73,8 +74,8 @@
                 button {
                     width: 60px;
                     font-size: 10px;
-                    color: white;
-                    background-color: black;
+                    color: $color-letra-secundario;
+                    background-color: $color-boton1;
                     border-radius: 5px;
                 }
             }
@@ -173,6 +174,7 @@
 
 @media screen and (min-width: 1200px) {
     .pieDePagina {
+        min-height: 20vh;
         .menuYNewsletter {
             grid-template-areas:
                 "listaDirecciones    .           .            redesMusk  "

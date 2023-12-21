@@ -36,11 +36,11 @@ main {
                         input {
                             width: 80%;
                             margin: 5px;
-                            border: 1px solid black;
+                            border: 1px solid $color-boton1;
 
                             &:focus {
-                                background-color: #1d2f7c;
-                                color: white;
+                                background-color: $color-pseudoclases-primario;
+                                color: $color-pseudoclases-secundario;
                             }
                         }
                     }
@@ -68,8 +68,8 @@ main {
                 }
 
                 button {
-                    color: white;
-                    background-color: black;
+                    color: $color-letra-secundario;
+                    background-color: $color-boton1;
                     border-radius: 10%;
                 }
             }

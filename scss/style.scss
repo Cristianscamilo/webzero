@@ -1,7 +1,9 @@
-//Base
+//abstracts
+@import "abstracts/variables";
+//base
 @import "base/reset";
 @import "base/typography";
-
+//components
 //layout
 @import "layout/navigation";
 @import "layout/header";
@@ -12,3 +14,5 @@
 @import "pages/libros";
 @import "pages/noticias";
 @import "pages/contacto";
+//themes
+//vendors
