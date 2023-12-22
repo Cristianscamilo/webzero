@@ -1,10 +1,8 @@
 /*Main pagina libros*/
 main {
     #seccionLibros {
-        display: flex;
-        flex-direction: column;
+        @include flex(flex, column, center);
         padding: 10px;
-        align-items: center;
         align-content: center;
         background-image: $fondo-imagen;
         background-size: 100% 100%;
@@ -18,9 +16,7 @@ main {
             border-radius: 5%;
 
             a {
-                display: flex;
-                flex-direction: column;
-                align-items: center;
+                @include flex(flex, column, center);
 
                 img {
                     width: 60%;
@@ -35,9 +31,7 @@ main {
         }
 
         #libroMusk {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
+            @include flex(flex, column, center);
             box-shadow: $color-efecto-sombra;
             border-radius: 5%;
             margin: 15px;

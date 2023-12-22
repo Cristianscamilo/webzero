@@ -459,8 +459,8 @@ main #cierre article iframe {
 main #cuerpoBiografia {
   display: flex;
   flex-direction: column;
-  padding: 10px;
   align-items: center;
+  padding: 10px;
   background-image: url(../img/fondoB.jpg);
   background-size: 100% 100%;
   color: rgb(0, 0, 0);
@@ -509,7 +509,7 @@ main #cuerpoBiografia #generalidadesElon #metodo ol il {
 main #cuerpoBiografia #generalidadesElon #cargos {
   display: flex;
   flex-direction: column;
-  text-align: center;
+  align-items: center;
   padding: 10px;
 }
 main #cuerpoBiografia #generalidadesElon #cargos h2 {
@@ -576,8 +576,8 @@ main #cuerpoBiografia #generalidadesElon #cargos table tr:first-child {
 main #seccionLibros {
   display: flex;
   flex-direction: column;
-  padding: 10px;
   align-items: center;
+  padding: 10px;
   align-content: center;
   background-image: url(../img/fondoB.jpg);
   background-size: 100% 100%;
@@ -743,8 +743,8 @@ main #noticiasRecientes article .twitter-tweet-rendered iframe {
 main #contactoSeccion {
   display: flex;
   flex-direction: column;
-  padding: 10px;
   align-items: center;
+  padding: 10px;
   margin-bottom: 20px;
 }
 main #contactoSeccion img {

@@ -1,10 +1,8 @@
 /*Main pagina biografia*/
 main {
     #cuerpoBiografia {
-        display: flex;
-        flex-direction: column;
+        @include flex(flex, column, center);
         padding: 10px;
-        align-items: center;
         background-image: $fondo-imagen;
         background-size: 100% 100%;
         color: $color-letra-principal;
@@ -80,9 +78,7 @@ main {
             }
 
             #cargos {
-                display: flex;
-                flex-direction: column;
-                text-align: center;
+                @include flex(flex, column, center);
                 padding: 10px;
 
                 h2 {

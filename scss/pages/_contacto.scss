@@ -2,10 +2,8 @@
 
 main {
     #contactoSeccion {
-        display: flex;
-        flex-direction: column;
+        @include flex(flex, column, center);
         padding: 10px;
-        align-items: center;
         margin-bottom: 20px;
 
         img {
@@ -16,9 +14,7 @@ main {
         }
 
         #formularioContacto {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
+            @include flex(flex, column, center);
             padding-left: 10%;
 
             h2 {

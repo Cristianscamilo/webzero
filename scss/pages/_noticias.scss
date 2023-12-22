@@ -4,15 +4,11 @@ main {
         background-image: $fondo-imagen;
         background-size: 100% 100%;
         color: $color-letra-principal;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        @include flex(flex, column, center);
         padding: 20px;
 
         article {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
+            @include flex(flex, column, center);
             padding: 20px;
 
             iframe {
