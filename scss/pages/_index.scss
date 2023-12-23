@@ -97,6 +97,10 @@ main {
                         img {
                             margin-top: 20px;
                             margin-bottom: 10px;
+
+                            &:hover {
+                                transform: scale(1.05, 1.05);
+                            }
                         }
                     }
                 }

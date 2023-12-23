@@ -128,6 +128,9 @@ header .encabezado .redesMusk li a img {
   header .encabezado .redesMusk li a img {
     width: 40px;
   }
+  header .encabezado .redesMusk li a img:hover {
+    transform: scale(1.05, 1.05);
+  }
 }
 @media screen and (min-width: 768px) {
   header .encabezado .redesMusk {
@@ -233,6 +236,9 @@ header .encabezado .redesMusk li a img {
   .pieDePagina .menuYNewsletter .segundoLogo {
     justify-content: flex-end;
   }
+  .pieDePagina .menuYNewsletter .segundoLogo:hover {
+    transform: scale(1.08, 1.08);
+  }
   .pieDePagina .menuYNewsletter .newsLetter h4 {
     font-size: 12px;
     width: 100%;
@@ -295,6 +301,9 @@ header .encabezado .redesMusk li a img {
   .pieDePagina .menuYNewsletter .boxRedes .redesFooter li img {
     min-width: 40px;
     margin-right: 10px;
+  }
+  .pieDePagina .menuYNewsletter .boxRedes .redesFooter li img:hover {
+    transform: scale(1.05, 1.05);
   }
 }
 /* Main index*/
@@ -382,6 +391,9 @@ main #cierre article iframe {
   main section .contenedorUno .tarjeta a img {
     margin-top: 20px;
     margin-bottom: 10px;
+  }
+  main section .contenedorUno .tarjeta a img:hover {
+    transform: scale(1.05, 1.05);
   }
 }
 /* Pantalla 768px en adelante*/

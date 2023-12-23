@@ -128,6 +128,9 @@
 
             .segundoLogo {
                 justify-content: flex-end;
+                &:hover {
+                    transform: scale(1.08,1.08);
+                }
             }
 
             .newsLetter {
@@ -175,6 +178,7 @@
 @media screen and (min-width: 1200px) {
     .pieDePagina {
         min-height: 20vh;
+
         .menuYNewsletter {
             grid-template-areas:
                 "listaDirecciones    .           .            redesMusk  "
@@ -224,6 +228,10 @@
                         img {
                             min-width: 40px;
                             margin-right: 10px;
+
+                            &:hover {
+                                transform: scale(1.05, 1.05);
+                            }
                         }
                     }
                 }
