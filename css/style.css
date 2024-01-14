@@ -524,7 +524,7 @@ main #cuerpoBiografia #generalidadesElon #cargos {
   align-items: center;
   padding: 10px;
 }
-main #cuerpoBiografia #generalidadesElon #cargos h2 {
+main #cuerpoBiografia #generalidadesElon #cargos h3 {
   width: 100%;
   font-weight: 700;
   text-align: center;
@@ -666,7 +666,7 @@ main #seccionLibros #libroMusk iframe {
     width: 550px;
     height: 300px;
   }
-  main #seccionLibros #libroMusk p {
+  main #seccionLibros #libroMusk h3 {
     font-weight: 400;
   }
 }
@@ -722,7 +722,7 @@ main #noticiasRecientes article .twitter-tweet-rendered iframe {
     left: 40%;
     position: absolute;
   }
-  main #noticiasRecientes #primerVideoNews h2 {
+  main #noticiasRecientes #primerVideoNews h3 {
     font-size: 20px;
     width: 100%;
   }
@@ -734,7 +734,7 @@ main #noticiasRecientes article .twitter-tweet-rendered iframe {
     left: 60%;
     position: absolute;
   }
-  main #noticiasRecientes #segundoVideoNews h2 {
+  main #noticiasRecientes #segundoVideoNews h3 {
     font-size: 20px;
     width: 100%;
   }
