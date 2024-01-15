@@ -26,10 +26,7 @@ main {
 
         #imgTeslaElon {
             img {
-                width: 100%;
-                max-width: 600px;
-                padding: 10px;
-                justify-content: center;
+                @extend .imga;
             }
 
             #wikipedia {
@@ -52,12 +49,8 @@ main {
 
         #imgSpaceElon {
             img {
-                width: 100%;
-                max-width: 600px;
-                padding: 10px;
-                justify-content: center;
+                @extend .imga;
             }
-
         }
 
         #generalidadesElon {
