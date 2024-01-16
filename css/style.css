@@ -1,4 +1,11 @@
 /*Variables*/
+main #cuerpoBiografia #imgSpaceElon img, main #cuerpoBiografia #imgTeslaElon img {
+  width: 100%;
+  max-width: 600px;
+  padding: 10px;
+  justify-content: center;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -486,12 +493,6 @@ main #cuerpoBiografia #indice ul li a:hover {
   text-decoration: underline;
   font-weight: bold;
 }
-main #cuerpoBiografia #imgTeslaElon img {
-  width: 100%;
-  max-width: 600px;
-  padding: 10px;
-  justify-content: center;
-}
 main #cuerpoBiografia #imgTeslaElon #wikipedia {
   font-size: 8px;
   display: block;
@@ -501,12 +502,6 @@ main #cuerpoBiografia #imgTeslaElon #wikipedia {
 }
 main #cuerpoBiografia #acordionHistoria .accordion-button {
   width: 95vw;
-}
-main #cuerpoBiografia #imgSpaceElon img {
-  width: 100%;
-  max-width: 600px;
-  padding: 10px;
-  justify-content: center;
 }
 main #cuerpoBiografia #generalidadesElon #metodo {
   padding: 10px;

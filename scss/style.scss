@@ -1,3 +1,7 @@
+//abstracts
+@import "abstracts/variables";
+@import "abstracts/mixins";
+@import "abstracts/placeholders";
 //base
 @import "base/reset";
 @import "base/typography";
@@ -13,8 +17,4 @@
 @import "pages/noticias";
 @import "pages/contacto";
 //themes
-//utils
-@import "utils/variables";
-@import "utils/mixins";
-@import "utils/helpers";
 //vendors
