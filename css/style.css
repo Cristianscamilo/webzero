@@ -839,5 +839,21 @@ main #contactoSeccion #formularioContacto form button {
     font-size: 30px;
   }
 }
+main #cuatroCeroCuatro a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 450px;
+}
+main #cuatroCeroCuatro a #image404 {
+  width: 50%;
+}
+
+/* Pantalla 900px en adelante*/
+@media screen and (min-width: 900px) {
+  main section #image404 {
+    max-width: 420px;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */
